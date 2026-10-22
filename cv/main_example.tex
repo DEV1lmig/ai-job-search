@@ -1,8 +1,8 @@
-%% Example CV - [YOUR_NAME]
+%% Example CV - Miguel Quiroz
 %% Comprehensive overview of all competencies, experience, and achievements.
 %% Use as a master reference when tailoring role-specific CVs.
 %%
-%% SETUP: Run /setup to populate this with your actual information.
+%% Populated 2026-10-22 from GitHub + portfolio. Lines marked VERIFY need your input.
 %% Compile with: lualatex main_example.tex
 %% (pdflatex often fails on modern MiKTeX with fontawesome5 font-expansion errors.)
 
@@ -40,7 +40,7 @@
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Miguel Quiroz - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
@@ -50,13 +50,13 @@
 \usepackage{import}
 
 % personal data
-\name{[First]}{[Last]}
+\name{Miguel}{Quiroz}
 % If you have no address to list, DELETE this whole line. \address{}{}{} fails
 % with "There's no line here to end" on every moderncv version.
-\address{[Your Address, City, Country]}{}{}
-\phone[mobile]{[+XX XXXXXXXXXX]}
-\email{[your.email@example.com]}
-\extrainfo{\href{[https://linkedin.com/in/your-profile]}{LinkedIn}, \href{[https://github.com/your-username]}{GitHub}}
+\address{Maracaibo, Venezuela}{}{}
+\phone[mobile]{+58 414 1688463}
+\email{quirozmiguel2002@gmail.com}
+\extrainfo{\href{https://www.linkedin.com/in/m1guel-quiroz/}{LinkedIn}, \href{https://github.com/DEV1lmig}{GitHub}, \href{https://dev1lmig.github.io}{Portfolio}}
 
 \begin{document}
 
@@ -67,7 +67,7 @@
 % ============================================================
 
 \vspace{6pt}
-\small{[Write a 3-5 line profile statement tailored to the role you're applying for. Focus on what makes you uniquely qualified. Example: "Data scientist with a PhD in [field] and X years of industry experience. Combines deep domain expertise in [domain] with strong applied machine learning and Python development skills. Experienced in developing end-to-end ML pipelines, from data ingestion to stakeholder-facing dashboards."]}
+\small{Full-stack software engineer with three years building web and mobile products in TypeScript and Python. Works both sides of the product: React, Next.js and Expo interfaces, and the FastAPI and Node.js services behind them. Shipped data2bids, an AI question-answering product for construction bid teams, with 1,400+ commits across the API, the React frontend and an Azure/Kubernetes document pipeline (OCR, embeddings, GraphRAG, MCP). Builds with Claude Code and ships code the next engineer can read.}
 
 % ============================================================
 %     CORE COMPETENCIES
@@ -77,15 +77,15 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item \textbf{[Skill Category 1]}: [Specific skills, frameworks, tools. Be concrete.]
+\item \textbf{Interfaces}: TypeScript, React, Next.js, TanStack Router, Tailwind CSS, Expo / React Native, SvelteKit, Figma.
 
-\item \textbf{[Skill Category 2]}: [Specific skills, frameworks, tools.]
+\item \textbf{Services and data}: Python, FastAPI, SQLAlchemy, Node.js, SQL (PostgreSQL, Azure SQL), Redis, Convex, Supabase.
 
-\item \textbf{[Skill Category 3]}: [Specific skills, frameworks, tools.]
+\item \textbf{AI over documents}: RAG and GraphRAG pipelines, OCR and document digitization, chunking and embeddings, cited answers, MCP servers with OAuth, Claude and ChatGPT integrations, agentic coding with Claude Code.
 
-\item \textbf{[Skill Category 4]}: [Domain expertise, methods, approaches.]
+\item \textbf{Cloud and delivery}: Azure (AKS, SQL, Blob Storage, Service Bus), Docker, Kubernetes, queue-driven workers, GitHub Actions, Vercel.
 
-\item \textbf{[Skill Category 5]}: [Tools, platforms, software.]
+\item \textbf{Ways of working}: end-to-end feature ownership, written specs and change logs, weekly stakeholder updates, remote and asynchronous teams.
 
 \end{itemize}
 
@@ -98,32 +98,49 @@
 \begin{itemize}
 
 % --- Most Recent Role ---
-\item{\cventry{[YYYY-Present]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+% VERIFY: employer legal name (TechGroupOne inferred)
+\item{\cventry{2025-Present}{Full-Stack Engineer}{data2bids (TechGroupOne)}{Remote}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1 - be specific, use numbers where possible]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
-    \item {[Achievement or responsibility 4]}
-\end{itemize}}}
-
-\vspace{3pt}
-
-% --- Previous Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
-\begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
-    \item {[Achievement or responsibility 3]}
+    \item {Built data2bids, AI question answering for construction bid teams, end to end: 1,400+ commits across the Python/FastAPI API, the React + TanStack Router frontend and the document pipeline.}
+    \item {Designed the document pipeline: read-only Google Drive sync, OCR of PDFs, drawings, spreadsheets and photos, chunking, embeddings and GraphRAG in a queue-driven worker on Azure Kubernetes Service with Service Bus and Blob Storage.}
+    \item {Every answer cites its source file and page; every query is scoped to a single company (multi-tenant isolation).}
+    \item {Built a custom MCP server with OAuth so Claude and ChatGPT can query a project directly.}
 \end{itemize}}}
 
 \vspace{3pt}
 
 % --- Earlier Role ---
-\item{\cventry{[YYYY-YYYY]}{[Job Title]}{[Company]}{[City, Country]}{}{\vspace{1pt}
+\item{\cventry{2020-Present}{UI and UX Designer (freelance)}{Self-employed}{Remote}{}{\vspace{1pt}
 \begin{itemize}
-    \item {[Achievement or responsibility 1]}
-    \item {[Achievement or responsibility 2]}
+    \item {Design for apps and websites in Figma, including landing pages and brand boards.}
+    \item {Process: clear milestones, written change log and weekly client updates by meeting or email.}
 \end{itemize}}}
+
+\end{itemize}
+
+% ============================================================
+%     SELECTED PROJECTS
+% ============================================================
+
+\section{Selected Projects}
+\vspace{1pt}
+\begin{itemize}
+
+\item{\cventry{2025-2026}{Playchive}{\href{https://playchive.vercel.app}{playchive.vercel.app}}{\href{https://github.com/DEV1lmig/Playchive}{Source}}{}{\vspace{1pt}
+Backlog, now-playing tracking and reviews for gamers. Product, design and development. Next.js web app and Expo mobile app sharing one Convex backend; Clerk auth; IGDB catalog.
+}}
+
+\vspace{3pt}
+
+\item{\cventry{2025}{Pycher (thesis)}{\href{https://github.com/DEV1lmig/pycher}{github.com/DEV1lmig/pycher}}{}{}{\vspace{1pt}
+AI-powered Python learning platform that adapts material to the learner. React + Vite, FastAPI, SQLAlchemy, PostgreSQL, Redis, Docker Compose, pytest.
+}}
+
+\vspace{3pt}
+
+\item{\cventry{2025}{Spelly}{\href{https://spelly-kit.vercel.app}{spelly-kit.vercel.app}}{}{}{\vspace{1pt}
+AI-powered grammar corrector using ML models; SvelteKit interface refined through user testing.
+}}
 
 \end{itemize}
 
@@ -135,14 +152,8 @@
 \vspace{1pt}
 \begin{itemize}
 
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-Thesis: ``[Thesis Title].'' [Brief description of research focus.]
-}}
-
-\vspace{3pt}
-
-\item{\cventry{[YYYY-YYYY]}{[Degree] in [Field]}{[Institution]}{[City, Country]}{}{\vspace{1pt}
-[Brief description or key topics.]
+\item{\cventry{2020-2025}{Computer Science Engineering (Ingeniería en Informática)}{Universidad Dr. Rafael Belloso Chacín (URBE)}{Maracaibo, Venezuela}{}{\vspace{1pt}
+Thesis: ``Pycher, an AI-powered Python learning platform.'' Interactive web application that uses AI to adapt Python learning materials and validate exercises.
 }}
 
 \end{itemize}
@@ -154,27 +165,7 @@ Thesis: ``[Thesis Title].'' [Brief description of research focus.]
 \section{Languages}
 \vspace{1pt}
 \begin{itemize}
-\item {[Language 1] (native), [Language 2] (fluent), [Language 3] (intermediate).}
-\end{itemize}
-
-% ============================================================
-%     PUBLICATIONS (optional)
-% ============================================================
-
-\section{Publications}
-\vspace{1pt}
-\begin{itemize}
-\item {[Author(s)] ([Year]). [Title]. [Journal/Conference]. \href{[DOI_URL]}{DOI link}}
-\end{itemize}
-
-% ============================================================
-%     HONORS AND AWARDS (optional)
-% ============================================================
-
-\section{Honors and Awards}
-\vspace{1pt}
-\begin{itemize}
-\item{\textbf{[Award Name]} -- [Event/Organization] ([Year]).}
+\item {Spanish (native), English (professional working proficiency).}
 \end{itemize}
 
 % ============================================================

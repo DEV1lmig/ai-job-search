@@ -4,7 +4,7 @@ framework_version: 1.2.7
 
 # Job Evaluation Framework
 
-<!-- SETUP: Skill match areas and career goals are personalized by running /setup -->
+<!-- Skill match areas and career goals populated 2026-10-22 from GitHub + portfolio; VERIFY notes need your input -->
 
 ## Eligibility Gate — run before scoring
 
@@ -60,9 +60,9 @@ How well do the required/preferred skills align with the candidate's capabilitie
 | 40-59 | Partial match, significant upskilling needed |
 | 0-39 | Fundamental mismatch |
 
-**Strong match areas:** [YOUR_PRIMARY_SKILLS]
-**Moderate match areas:** [YOUR_SECONDARY_SKILLS]
-**Weak match areas:** [SKILLS_YOU_LACK]
+**Strong match areas:** TypeScript, React, Next.js, Python, FastAPI, SQL/PostgreSQL, Tailwind, RAG/GraphRAG pipelines, OCR and document processing, MCP servers, Azure (AKS, SQL, Blob, Service Bus), Docker, Kubernetes
+**Moderate match areas:** Expo / React Native, SvelteKit, Node.js, Convex, Supabase, Clerk, Medusa, Redis, Java / Spring Boot (basic), UI/UX design in Figma, GitHub Actions
+**Weak match areas:** .NET / C#, PHP, Go, Rust, mobile native (Swift/Kotlin), AWS and GCP specifics (Azure is the cloud used), ML model training and research, data engineering at scale (Spark, Airflow), people management
 
 ### 2. Experience Match (0-100)
 Does work history align with what they're looking for? Match on the function and nature of the work performed, not the literal job title - a "Data Consultant" and a "Data Scientist" role can be functionally identical.
@@ -74,9 +74,9 @@ Does work history align with what they're looking for? Match on the function and
 | 40-59 | Adjacent experience, would need to make the case |
 | 0-39 | Unrelated experience |
 
-**Strong:** [YOUR_DIRECT_EXPERIENCE_DOMAINS]
-**Moderate:** [YOUR_ADJACENT_EXPERIENCE]
-**Entry-level:** [ROLES_WITH_LIMITED_EXPERIENCE]
+**Strong:** Full-stack web product engineering (React/Next.js + Python/FastAPI), AI question answering over documents (RAG, GraphRAG, OCR, cited answers), LLM integrations (MCP, Claude, ChatGPT), frontend dashboards
+**Moderate:** Mobile apps with Expo (Playchive), e-commerce (Medusa), UI/UX design, DevOps on Azure/Kubernetes (operated, not platform-owner)
+**Entry-level:** Tech lead / engineering manager, ML research scientist, data engineer, security engineer, embedded
 
 ### 3. Behavioral/Culture Fit (0-100)
 Does the role and company culture match the behavioral profile?
@@ -107,19 +107,20 @@ Does this role advance career goals and contain tasks that energize?
 | 0-39 | Dead end or backwards step |
 
 **Career goals:**
-- [YOUR_CAREER_GOAL_1]
-- [YOUR_CAREER_GOAL_2]
-- [YOUR_CAREER_GOAL_3]
+- Near term: a steady flow of short, well-scoped freelance or contract projects (web, mobile, AI-over-documents) that pay quickly
+- Move deeper into applied AI engineering: document intelligence, RAG/agent pipelines, LLM integrations as the core of the product
+- Join a larger product engineering team (remote, US/EU/LATAM) to learn from senior engineers and grow toward technical leadership
+- Keep working full-stack (TypeScript + Python) rather than being boxed into a single layer
 
 **Motivation filter:** Evaluate not just whether you *can* do the tasks, but whether the tasks will *energize* you. Consider:
-- Tasks that energize: [YOUR_ENERGIZING_TASKS]
-- Tasks that drain: [YOUR_DRAINING_TASKS]
+- Tasks that energize: building new features end to end, document/AI pipelines, designing interfaces, shipping to production, adopting new tooling (Claude Code, MCP)
+- Tasks that drain: pure maintenance of legacy code, ticket-only work with no product input, heavy meeting load, undocumented verbal requirements
 - Non-task factors: leadership style, department culture, company values, degree of autonomy
 
 **Life situation alignment:** Consider personal constraints:
-- **Security**: [YOUR_FINANCIAL_SITUATION_CONTEXT]
-- **Flexibility**: [YOUR_SCHEDULE_CONSTRAINTS]
-- **Professional development**: [YOUR_GROWTH_PRIORITIES]
+- **Security**: Currently employed; can be selective. No fixed salary expectation. The priority is **short projects that can be delivered fast and paid fast**: score a posting higher when scope is clear and bounded, payment is fixed-price or hourly with short terms, and there is no long hiring process. Score lower for unpaid test projects, vague scope, or net-60+ payment
+- **Flexibility**: Remote from Venezuela (UTC-4); US Eastern overlap is natural, EU overlap partial. No relocation. Contract / part-time / project-based engagements preferred over long full-time commitments
+- **Professional development**: senior engineers to learn from, AI/LLM product exposure, path toward architecture or tech-lead responsibility
 
 ### 6. Salary Benchmark (Optional)
 

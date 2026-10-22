@@ -59,7 +59,7 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
     linkcolor=blue,
     filecolor=magenta,
     urlcolor=blue,
-    pdftitle={[YOUR_NAME] - CV},
+    pdftitle={Miguel Quiroz - CV},
     % Keep pdfpagemode=UseNone: this block runs after moderncv's own
     % \AtEndPreamble (moderncv.cls sets pdfpagemode there), so a FullScreen
     % value here would win and open every CV in fullscreen presentation mode.
@@ -69,13 +69,13 @@ Expected output: `Output written on main_<company>_<role>.pdf (2 pages, ...)`. A
 \usepackage{import}
 
 % Personal data
-\name{[FIRST_NAME]}{[LAST_NAME]}
+\name{Miguel}{Quiroz}
 % If you have no address to list, DELETE this whole line. \address{}{}{} fails
 % with "There's no line here to end" on every moderncv version.
-\address{[YOUR_ADDRESS]}{}{}
-\phone[mobile]{[YOUR_PHONE]}
-\email{[YOUR_EMAIL]}
-\extrainfo{\href{[YOUR_LINKEDIN_URL]}{LinkedIn}, \href{[YOUR_GITHUB_URL]}{GitHub}}
+\address{Maracaibo, Venezuela}{}{}
+\phone[mobile]{+58 414 1688463}
+\email{quirozmiguel2002@gmail.com}
+\extrainfo{\href{https://www.linkedin.com/in/m1guel-quiroz/}{LinkedIn}, \href{https://github.com/DEV1lmig}{GitHub}, \href{https://dev1lmig.github.io}{Portfolio}}
 
 \begin{document}
 \makecvtitle
@@ -136,12 +136,15 @@ When the role sits outside your home domain, **lead with the domain-transfer arg
 
 **Create 2-3 profile statement templates for your main role types:**
 
-<!-- SETUP: These are populated based on your background -->
-**For [YOUR_PRIMARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_1]
+<!-- Populated 2026-10-22 from GitHub + portfolio -->
+**For Full-Stack / Software Engineer roles:**
+> Full-stack software engineer with three years building web and mobile products in TypeScript and Python. Owns both sides of the product: React, Next.js and Expo interfaces, and the FastAPI and Node.js services behind them. Shipped data2bids, an AI question-answering product for construction bid teams, with 1,400+ commits across the API, the frontend and an Azure/Kubernetes document pipeline. Builds with Claude Code and ships readable code the next engineer can pick up.
 
-**For [YOUR_SECONDARY_ROLE_TYPE] roles:**
-> [YOUR_PROFILE_STATEMENT_TEMPLATE_2]
+**For AI / LLM Engineer roles:**
+> Software engineer specialising in AI over documents. Built the production pipeline behind data2bids: Google Drive sync, OCR, chunking, embeddings and GraphRAG in a queue-driven worker on Kubernetes, returning answers that cite source file and page with per-company isolation. Exposed the same system to Claude and ChatGPT through a custom MCP server with OAuth. Python/FastAPI and React, deployed on Azure (AKS, SQL, Blob, Service Bus). Uses Claude Code daily for agentic development.
+
+**For Frontend / Product Engineer roles:**
+> Product-minded frontend engineer with a design background (freelance UI/UX since 2020) and three years of React, Next.js, SvelteKit and Expo work. Took Playchive from brand board to live web and mobile apps sharing one Convex backend. On data2bids, built the React + TanStack Router frontend of a production AI product. Comfortable with Tailwind, Figma and shipping to Vercel.
 
 Statements labeled *[Used for: <company>_<role>]* were extracted from archived application drafts by `/setup` Path A. They are **phrasing references, never fact sources**: when drafting from one, every factual claim still comes from `01-candidate-profile.md` - a past tailored draft does not vouch for its own accuracy.
 

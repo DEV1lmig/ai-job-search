@@ -1,10 +1,7 @@
-# Job Application Assistant for [YOUR_NAME]
-
-<!-- SETUP: This file is populated by running /setup -->
-<!-- After running /setup, all [PLACEHOLDER] tokens will be replaced with your actual information -->
+# Job Application Assistant for Miguel Quiroz
 
 ## Role
-This repo is a job application workspace. Claude acts as a career advisor and application assistant for [YOUR_NAME], helping with:
+This repo is a job application workspace. Claude acts as a career advisor and application assistant for Miguel Quiroz, helping with:
 1. **Job fit evaluation** - Assess job postings against your profile (skills, experience, behavioral traits)
 2. **CV tailoring** - Adapt existing CV templates (LaTeX/moderncv) to target specific roles
 3. **Cover letter writing** - Draft targeted cover letters using existing templates (LaTeX)
@@ -13,79 +10,82 @@ This repo is a job application workspace. Claude acts as a career advisor and ap
 
 ## Candidate Profile
 
-<!-- This section is auto-populated by /setup. You can also fill it in manually. -->
+<!-- Populated 2026-10-22 from github.com/DEV1lmig (profile README + repos) and dev1lmig.github.io.
+     Lines marked VERIFY were inferred or are missing from public sources - confirm before relying on them. -->
 
 ### Identity
-- **Name:** [YOUR_NAME]
-- **Location:** [YOUR_CITY], [YOUR_COUNTRY] ([YOUR_COMMUTE_CONSTRAINTS])
+- **Name:** Miguel Quiroz
+- **Location:** Maracaibo, Venezuela (remote-first; open to remote roles worldwide and LATAM) <!-- VERIFY: city inferred from URBE's campus; confirm relocation/timezone constraints -->
 - **Languages:**
   | Language | Level |
   |----------|-------|
-  | [LANGUAGE] | [LEVEL] |
-  <!-- Every language you work in professionally, with your level (CEFR, "native," "professional
-  working proficiency," whatever your CV/LinkedIn use - no need to force it into one scale). An
-  undeclared language is a hard deal-breaker if a posting requires it; a declared language at a
-  lower level than a posting wants is flagged for your own judgment, not auto-rejected. See
-  04-job-evaluation.md's Language Gate. -->
-- **CV language:** [YOUR_CV_LANGUAGE] <!-- English unless your market expects otherwise; /setup asks -->
+  | Spanish | Native |
+  | English | Professional working proficiency (portfolio, README and code written in English) <!-- VERIFY: confirm CEFR level, e.g. C1 --> |
+- **CV language:** English <!-- Spanish-market applications can use Spanish; see 05-cv-templates.md -->
 
-- **Status:** [YOUR_EMPLOYMENT_STATUS]
-- **LinkedIn headline:** "[YOUR_LINKEDIN_HEADLINE]"
+- **Status:** Employed as full-stack engineer on data2bids. **Looking primarily for short freelance / contract projects that can be delivered fast and paid fast** (fixed-price or hourly). Open to a full-time remote role only if clearly better.
+- **Salary expectations:** none fixed. Prioritise fast turnaround and fast payment over headline rate; flag long hiring processes, unpaid test projects and net-60+ payment terms.
+- **LinkedIn headline:** "Software Engineer | Full-Stack Developer | AI over documents"
+- **Portfolio:** https://dev1lmig.github.io
+- **GitHub:** https://github.com/DEV1lmig
+- **LinkedIn:** https://www.linkedin.com/in/m1guel-quiroz/
+- **Email:** quirozmiguel2002@gmail.com
+- **Phone:** +58 414 1688463
 
 ### Education
-<!-- List your degrees, most recent first -->
-- **[DEGREE_LEVEL] in [FIELD]** ([YEAR_START]-[YEAR_END]) - [INSTITUTION]
-  - Thesis: "[THESIS_TITLE]"
-  - Topics: [KEY_TOPICS]
+- **Computer Science Engineering (Ingeniería en Informática)** (2020-2025) - Universidad Dr. Rafael Belloso Chacín (URBE), Maracaibo, Venezuela
+  - Thesis: "Pycher - AI-powered Python learning platform" (interactive web app that adapts Python learning material with AI)
+  - Topics: software engineering, web development, databases, AI-assisted learning
 
 ### Professional Experience
-<!-- List your roles, most recent first -->
-- **[JOB_TITLE]** ([START_DATE] - [END_DATE]) - **[COMPANY]** ([LOCATION])
-  - [KEY_RESPONSIBILITY_1]
-  - [KEY_RESPONSIBILITY_2]
-  - [KEY_ACHIEVEMENT]
+- **Full-Stack Engineer** (November 2025 - present) - **data2bids / TechGroupOne** (remote) <!-- VERIFY employer legal name -->
+  - Built and shipped data2bids, an AI question-answering product for construction bid teams: read-only Google Drive sync, OCR, chunking, embeddings and GraphRAG in a queue-driven worker on Kubernetes
+  - Owns the Python/FastAPI API, the React + TanStack Router frontend and the document pipeline on Azure (AKS, SQL, Blob Storage, Service Bus); 1,400+ commits
+  - Built a custom MCP server with OAuth so Claude and ChatGPT can query a project; every answer cites source file and page and every query is scoped to one company
+- **UI/UX Designer, freelance** (2020 - present)
+  - Design for apps and websites in Figma; e.g. the Belkys Manga TC landing page prototype
+  - Working style: clear milestones, written change log, weekly client updates by meeting or email
 
 ### Technical Skills
-- **Primary:** [YOUR_PRIMARY_SKILLS]
-- **Secondary:** [YOUR_SECONDARY_SKILLS]
-- **Domain:** [YOUR_DOMAIN_EXPERTISE]
-- **Software:** [YOUR_TOOLS_AND_SOFTWARE]
+- **Primary:** TypeScript, React, Next.js, Python, FastAPI, SQL (PostgreSQL), Tailwind CSS
+- **Secondary:** Expo / React Native, SvelteKit, Node.js, Convex, Supabase, Clerk, Java / Spring Boot (basic), Medusa (e-commerce)
+- **Domain:** AI over documents (RAG / GraphRAG, OCR, embeddings, MCP servers), full-stack web and mobile products, UI/UX design
+- **Software:** Azure (AKS, SQL, Blob, Service Bus), Docker, Kubernetes, Git/GitHub, Figma, Vercel, Claude Code
 
 ### Certifications
-<!-- List relevant certifications with dates -->
-- **[CERTIFICATION_NAME]** - [HOURS]h - completed [DATE]
+- None listed publicly <!-- VERIFY: add any online courses or professional certs -->
 
 ### Publications
-<!-- List peer-reviewed publications, if any -->
-- [AUTHOR_LIST] ([YEAR]). [TITLE]. [JOURNAL].
+- None
 
 ### Awards
-<!-- List relevant awards, hackathons, competitions -->
-- [AWARD_NAME] - [EVENT] ([YEAR])
+- None listed publicly <!-- VERIFY -->
 
 ### Behavioral Profile
-<!-- Your behavioral assessment results (PI, DISC, Myers-Briggs, or self-assessment) -->
-- **[TRAIT_1]** - [DESCRIPTION]
-- **[TRAIT_2]** - [DESCRIPTION]
-- **Strengths:** [YOUR_STRENGTHS]
-- **Growth areas:** [YOUR_GROWTH_AREAS]
-- **Thrives in:** [YOUR_IDEAL_ENVIRONMENT]
+<!-- Inferred from portfolio FAQ and project history; no formal assessment on file - review before relying on this -->
+- **Product-minded builder** - Works both sides of the product (interface and services) and takes personal projects from brand board to live app (Playchive: product, design and development)
+- **Structured communicator** - Sets clear milestones, keeps a written change log, updates stakeholders weekly
+- **Strengths:** shipping end-to-end features alone, readable code "that the next person can read", fast adoption of new tooling (GraphRAG, MCP, Convex, Expo)
+- **Growth areas:** leading a team / mentoring (experience so far is individual contributor), large-organization process <!-- VERIFY -->
+- **Thrives in:** small product teams or startups, remote and asynchronous work, roles that mix frontend, backend and AI
 
 ### What Excites You
-<!-- What motivates you professionally -->
-- [PASSION_1]
-- [PASSION_2]
+- AI pipelines over real documents: OCR, RAG/GraphRAG, cited answers, MCP integrations
+- Building complete products (web + mobile) from design to deployment
+- Developer tooling and agentic coding (Claude Code)
 
 ### Target Sectors
-<!-- Industries and companies you're targeting -->
-- [SECTOR_1]: [EXAMPLE_COMPANIES]
-- [SECTOR_2]: [EXAMPLE_COMPANIES]
+- AI / LLM products and applied AI startups: document intelligence, RAG platforms, AI assistants
+- SaaS and product startups (remote, US/EU/LATAM): full-stack TypeScript + Python teams
+- Construction tech / proptech (data2bids domain) and e-commerce (Medusa experience)
+- Gaming and consumer apps (Playchive)
 
 ### Deal-breakers
-<!-- Hard constraints on job search. Language requirements are handled separately and
-automatically from your Languages table above - don't duplicate them here. -->
-- [DEALBREAKER_1]
-- [DEALBREAKER_2]
+- Unpaid trial work or multi-week interview processes for short contracts
+- Payment terms longer than ~30 days, or no clear payment method for Venezuela (USD via PayPal, Wise, crypto, Deel, etc.)
+- Requires relocation or fully on-site work outside Venezuela
+- Pure maintenance roles with no product development
+- Stack with no TypeScript or Python (e.g. pure .NET, PHP, or Java-only shops)
 
 ## Repo Structure
 - `cv/` - LaTeX CV variants (moderncv template, banking style)
